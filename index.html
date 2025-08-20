@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Josueburguer 🍔</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Josueburguer</h1>
+      <div class="carrito" onclick="toggleCarrito()">
+        Acumulado🛒 (<span id="cantidad-carrito">0</span>)
+      </div>
+    </header>
+
+    <main>
+      <h2>Nuestros Menús y Promos</h2>
+      <div class="productos" id="productos">
+        <!-- Productos generados por JS -->
+      </div>
+    </main>
+
+    <div id="carrito-container" class="carrito-oculto">
+      <h3>Carrito</h3>
+      <ul id="lista-carrito"></ul>
+      <p>Total: S/. <span id="total">0.00</span></p>
+      <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+
+    <footer>
+      <p>las mejores hamburguesas con un sabor tradicional clasico</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
